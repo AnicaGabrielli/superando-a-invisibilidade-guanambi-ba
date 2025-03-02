@@ -55,9 +55,11 @@ border: dashed 2px $marromEscuro;
         display: none;
     }
     #titulo{
+        font-size: smaller;
         width: 85%;
     }
     #hamburger{
+        margin-right: 3%;
         display: inline-block;
     }
 }

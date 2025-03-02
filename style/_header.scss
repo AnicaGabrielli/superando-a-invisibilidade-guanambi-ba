@@ -1,0 +1,63 @@
+#tituloLogo{
+    background-color: $marrom;
+    width: 100%;
+    padding: 1%;
+    color: $branco;
+    @include alinhamentoFlexRow();
+}
+
+.linkTopo{
+    @include estilizaLinks();
+    margin: 2%;
+    &:hover{
+        transition: all 1s;
+        background-color: $marromClaro;
+        padding: 1%;
+        
+    }
+}
+
+#acessos{
+    width: 70%;
+    @include alinhamentoFlexRow();
+    flex-wrap: wrap;
+}
+
+#logoTitulo{
+    border-radius: 50%;
+}
+
+#titulo{
+    width: 23%;
+    font-size: 110%;
+    padding-left:2% ;
+}
+#menuOculto{
+    @include alinhamentoFlexRow;
+    background-color: $marromEscuro;
+    width: 100%;
+    flex-wrap: wrap;
+    display: none;
+    .linkTopo{
+        width: 45%;
+        text-align: center;
+    }
+}
+
+#hamburger{
+display: none;
+border: dashed 2px $marromEscuro;
+}
+// responsividade
+
+@media screen and (max-width: 700px) {
+    #acessos{
+        display: none;
+    }
+    #titulo{
+        width: 85%;
+    }
+    #hamburger{
+        display: inline-block;
+    }
+}

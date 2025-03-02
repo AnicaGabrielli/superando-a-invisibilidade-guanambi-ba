@@ -1,0 +1,8 @@
+@import '../style/estilosGlobais';
+@import '../style/funcoes';
+@import '../style/header';
+
+// deixando o link da página com uma cor específica 
+#contato{
+    @include linkAtivo();
+}

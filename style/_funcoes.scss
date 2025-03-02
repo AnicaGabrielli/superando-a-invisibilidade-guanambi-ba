@@ -1,0 +1,18 @@
+
+@mixin estilizaLinks(){
+    text-decoration: none;
+    color: white;
+}
+@mixin linkAtivo(){
+    background-color: $marromClaro;
+    padding: 1%;
+}
+@mixin alinhamentoFlexRow(){
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+@mixin alinhamentoFlexColumn(){
+    
+}

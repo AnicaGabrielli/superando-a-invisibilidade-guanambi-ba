@@ -1,0 +1,8 @@
+@import './estilosGlobais';
+@import './funcoes';
+@import './header';
+
+// deixando o link da página com uma cor específica 
+#entrevistas{
+    @include linkAtivo();
+}

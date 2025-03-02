@@ -1,0 +1,18 @@
+// variaveis
+$fonte:Arial, Helvetica, sans-serif;
+$marrom: rgb(153, 84, 24);
+$marromEscuro: rgb(66, 42, 22);
+$marromClaro:rgb(196, 134, 83);
+$branco: rgb(255, 255, 255);
+*{
+    // decobri que serve para deixar o elemento filho completamente dentro do pai e adcionar uma margin 
+    border: 1px solid gray;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: $fonte;
+    letter-spacing: 2px;
+}
+

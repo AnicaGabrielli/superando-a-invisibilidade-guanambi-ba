@@ -150,6 +150,7 @@ section #subtitulo {
 @media screen and (max-width: 700px) {
   main {
     flex-direction: column;
+    padding-bottom: 50px;
   }
   main #introducao {
     width: 97%;

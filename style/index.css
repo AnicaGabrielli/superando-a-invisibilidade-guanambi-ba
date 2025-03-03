@@ -149,7 +149,7 @@ section #subtitulo {
 
 @media screen and (max-width: 700px) {
   h1 {
-    padding-top: 70px;
+    padding-top: 50px;
   }
   main {
     flex-direction: column;

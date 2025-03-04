@@ -95,4 +95,53 @@ footer {
 #entrevistas {
   background-color: rgb(196, 134, 83);
   padding: 1%;
+}
+
+.entrevista {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 4%;
+  flex-wrap: wrap;
+  width: 100%;
+  border-top: dotted 8px rgb(71, 64, 64);
+}
+
+.entrevistaDescricao {
+  color: rgb(71, 64, 64);
+  width: 45%;
+  text-align: justify;
+}
+
+h1 {
+  text-align: center;
+  padding: 4%;
+}
+
+main {
+  display: none;
+}
+
+#mainOculta {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  display: none;
+}
+
+.botao {
+  background-color: rgb(66, 42, 22) !important;
+  border: none !important;
+}
+
+@media screen and (max-width: 700px) {
+  main {
+    display: none;
+  }
+  #mainOculta {
+    display: flex;
+  }
 }/*# sourceMappingURL=entrevistas.css.map */

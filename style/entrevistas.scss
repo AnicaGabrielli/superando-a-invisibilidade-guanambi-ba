@@ -7,3 +7,42 @@
 #entrevistas{
     @include linkAtivo();
 }
+.entrevista{
+    @include alinhamentoFlexRow();
+    padding: 4%;
+    flex-wrap: wrap;
+    width: 100%;
+    border-top: dotted 8px $pretoClaro;
+    
+}
+.entrevistaDescricao{
+    color: $pretoClaro;
+    width: 45%;
+    text-align: justify;
+}
+h1{
+    text-align: center;
+    padding: 4%;
+}
+main{
+    display: none;
+}
+#mainOculta{
+    @include alinhamentoFlexColumn();
+    flex-wrap:wrap;
+    display: none;
+
+}
+.botao{
+    background-color: $marromEscuro !important;
+    border: none !important;
+}
+
+@media screen and (max-width: 700px) {
+    main{
+        display: none;
+    }
+    #mainOculta{
+        display: flex;
+    }
+}

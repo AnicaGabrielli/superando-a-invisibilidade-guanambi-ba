@@ -95,4 +95,26 @@ footer {
 #dados {
   background-color: rgb(196, 134, 83);
   padding: 1%;
+}
+
+body {
+  background-color: rgb(246, 229, 213);
+  color: rgb(71, 64, 64);
+}
+
+h2 {
+  text-align: center;
+  padding: 5%;
+}
+
+main {
+  text-align: justify;
+  margin: 3%;
+}
+
+.videosReferencia {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
 }/*# sourceMappingURL=dados.css.map */

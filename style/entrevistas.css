@@ -114,9 +114,14 @@ footer {
   text-align: justify;
 }
 
+iframe {
+  width: 48% !important;
+}
+
 h1 {
   text-align: center;
-  padding: 4%;
+  padding-top: 4%;
+  padding-bottom: 4%;
 }
 
 #mainOculta {
@@ -126,6 +131,11 @@ h1 {
   align-items: center;
   flex-wrap: wrap;
   display: none;
+  margin-bottom: 4%;
+  padding-top: 4%;
+  padding-bottom: 4%;
+  border-top: dotted 8px rgb(153, 84, 24);
+  border-bottom: dotted 8px rgb(153, 84, 24);
 }
 
 .botao {
@@ -139,5 +149,8 @@ h1 {
   }
   #mainOculta {
     display: flex;
+  }
+  h1 {
+    padding-top: 50px;
   }
 }/*# sourceMappingURL=entrevistas.css.map */

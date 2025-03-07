@@ -7,3 +7,20 @@
 #dados{
     @include linkAtivo();
 }
+body{
+    background-color: $marromClarinho;
+    color: $pretoClaro;
+}
+h2{
+    text-align: center;
+    padding: 5%;
+}
+main{
+    text-align: justify;
+    margin: 3%;
+}
+
+.videosReferencia{
+    @include alinhamentoFlexColumn();
+    
+}

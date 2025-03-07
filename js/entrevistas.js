@@ -1,7 +1,7 @@
 const paragrafoEntrevista = [...document.querySelectorAll('.entrevistaDescricao')];
 
 const paragrafos = [
-    'Aline Pauline Teixeira, psicóloga e neuropsicóloga, falou sobre os desafios que enfrentou como mulher negra em Guanambi. Chegando à cidade há três anos, ela buscava avançar na carreira e realizar sonhos pessoais. Aline compartilhou que, em todos os lugares por onde passou, enfrentou a percepção equivocada e o preconceito devido à sua cor. Ela destacou que, mesmo em contextos de luta antirracista, a presença de mulheres negras em posições de liderança ainda é muito limitada, refletindo uma grande defasagem na representatividade.',
+    'Aline Paulino Teixeira, psicóloga e neuropsicóloga, falou sobre os desafios que enfrentou como mulher negra em Guanambi. Chegando à cidade há três anos, ela buscava avançar na carreira e realizar sonhos pessoais. Aline compartilhou que, em todos os lugares por onde passou, enfrentou a percepção equivocada e o preconceito devido à sua cor. Ela destacou que, mesmo em contextos de luta antirracista, a presença de mulheres negras em posições de liderança ainda é muito limitada, refletindo uma grande defasagem na representatividade.',
 
     'Martha de Cássia, professora no Instituto Federal há 28 anos, compartilhou sua jornada de vida em Guanambi e os desafios enfrentados como mulher negra. Ela destacou as dificuldades da infância, quando estudou em uma escola particular majoritariamente branca, onde sofreu discriminação racial. Ao longo de sua carreira, Martha enfrentou preconceitos, mas sempre encontrou força na educação, que considera essencial para a ascensão das mulheres negras. Com uma trajetória marcada por superação e empoderamento, ela enfatiza a importância da autoestima e da educação como ferramentas fundamentais para vencer as adversidades e conquistar espaços de poder. Martha encerra sua fala encorajando mulheres a buscar autoconhecimento e amor próprio, acreditando que o verdadeiro poder vem de dentro.',
     
@@ -32,27 +32,72 @@ paragrafoEntrevista.map((el,chave)=>{
 
 const mainOculta = document.getElementById('mainOculta');
 
-const cardEntrevistas = [
-    '<div class="card" style="width: 18rem;"> <img src="../img/aline.png" class="card-img-top" alt=""><div class="card-body"><h5 class="card-title">Aline Paulino</h5><p class="card-text">Psicóloga e Neuropsicóloga</p><a href="https://www.youtube.com/embed/W8gIOXHwDds?si=S0cbxrrEhxOCY_-G" class="btn btn-primary botao" >ASSISTA</a></div></div>',
 
-    '<div class="card" style="width: 18rem;"> <img src="../img/marta.png" class="card-img-top" alt=""><div class="card-body"><h5 class="card-title">Martha de Cássia</h5><p class="card-text">Professora</p><a href="https://www.youtube.com/embed/XicgPu0EmTg?si=t0v2cLR8jO4NqT7Q" class="btn btn-primary botao" >ASSISTA</a></div></div>',
-
-    '<div class="card" style="width: 18rem;"> <img src="../img/regina.png" class="card-img-top" alt=""><div class="card-body"><h5 class="card-title">Regina Araújo</h5><p class="card-text">Técnica administrativa</p><a href="https://www.youtube.com/embed/59xGv1SGvE0?si=UkxzTJQOIEnbdv0o" class="btn btn-primary botao" >ASSISTA</a></div></div>',
-
-    '<div class="card" style="width: 18rem;"> <img src="../img/deth.png" class="card-img-top" alt=""><div class="card-body"><h5 class="card-title">Dona Deth</h5><p class="card-text">Professora</p><a href="https://www.youtube.com/embed/dz_68eLgAyI?si=43cNpqQR_DU4-_5e" class="btn btn-primary botao" >ASSISTA</a></div></div>',
-
-    '<div class="card" style="width: 18rem;"> <img src="../img/leidiane.png" class="card-img-top" alt=""><div class="card-body"><h5 class="card-title">Leidiane</h5><p class="card-text">Bibliotecária</p><a href="https://www.youtube.com/embed/mY0wlnU_i7U?si=z1hyrqo7Ou5G8vSa" class="btn btn-primary botao" >ASSISTA</a></div></div>',
-
-    '<div class="card" style="width: 18rem;"> <img src="../img/ana.png" class="card-img-top" alt=""><div class="card-body"><h5 class="card-title">Ana Paula</h5><p class="card-text">Presidente da UNEGRO e agente sócio produtiva</p><a href="https://www.youtube.com/embed/Kpo_3itQ10Y?si=1bZbVWs_f356v8RF" class="btn btn-primary botao" >ASSISTA</a></div></div>',
-
-    '<div class="card" style="width: 18rem;"> <img src="../img/letycia.png" class="card-img-top" alt=""><div class="card-body"><h5 class="card-title">Letycia Catarine</h5><p class="card-text">Coordenadora do SineBahia</p><a href="https://www.youtube.com/embed/tWd1hRszpVQ?si=F9RIqEL0kWlUKNhA" class="btn btn-primary botao" >ASSISTA</a></div></div>',
-
-    '<div class="card" style="width: 18rem;"> <img src="../img/eliane.png" class="card-img-top" alt=""><div class="card-body"><h5 class="card-title">Eliane Barbosa</h5><p class="card-text">Nutricionista</p><a href="https://www.youtube.com/embed/9qE7rlFY1qI?si=oBJigECQrzPm7vp9" class="btn btn-primary botao" >ASSISTA</a></div></div>',
-
-    '<div class="card" style="width: 18rem;"> <img src="../img/fabiana.png" class="card-img-top" alt=""><div class="card-body"><h5 class="card-title">Fabiana Santos</h5><p class="card-text">Jornalista</p><a href="https://www.youtube.com/embed/6_r5xXt3CQo?si=UxKfIlkpEcxjgMnR" class="btn btn-primary botao" >ASSISTA</a></div></div>',
-
+const imagensEntrevista = [
+    '../img/aline.png', 
+    "../img/marta.png", 
+    "../img/regina.png", 
+    "../img/deth.png", 
+    "../img/leidiane.png", 
+    "../img/ana.png", 
+    "../img/letycia.png", 
+    "../img/eliane.png", 
+    "../img/fabiana.png", 
+    '../img/ludmila.png'
 ];
+const nomeEntrevistada = [
+    'Aline Paulino', 
+    'Martha de Cássia', 
+    'Regina Araújo', 
+    'Dona Deth', 
+    'Leidiane',
+    'Ana Paula',
+    'Letycia Catarine',
+    'Eliane Barbosa',
+    'Fabiana Santos',
+    'Ludmila Paes'
+]
+const profissaoEntrevistadas =[
+    'Psicóloga e Neuropsicóloga',
+    'Professora',
+    'Técnica administrativa',
+    'Professora',
+    'Bibliotecária',
+    'Presidente da UNEGRO e agente sócio produtiva',
+    'Coordenadora do SineBahia',
+    'Nutricionista',
+    'Jornalista',
+    'Professora'
+]
 
-cardEntrevistas.id = 'cardEntrevista';
+const linkVideos = [
+    "https://www.youtube.com/embed/W8gIOXHwDds?si=S0cbxrrEhxOCY_-G",
+    'https://www.youtube.com/embed/XicgPu0EmTg?si=t0v2cLR8jO4NqT7Q',
+    "https://www.youtube.com/embed/59xGv1SGvE0?si=UkxzTJQOIEnbdv0o",
+    'https://www.youtube.com/embed/dz_68eLgAyI?si=43cNpqQR_DU4-_5e',
+    'https://www.youtube.com/embed/mY0wlnU_i7U?si=z1hyrqo7Ou5G8vSa',
+    'https://www.youtube.com/embed/Kpo_3itQ10Y?si=1bZbVWs_f356v8RF',
+    'https://www.youtube.com/embed/tWd1hRszpVQ?si=F9RIqEL0kWlUKNhA',
+    'https://www.youtube.com/embed/9qE7rlFY1qI?si=oBJigECQrzPm7vp9',
+    'https://www.youtube.com/embed/6_r5xXt3CQo?si=UxKfIlkpEcxjgMnR',
+    "https://www.youtube.com/embed/Q8x-xiZghno?si=z26b78V5TQKKTNB_"
 
-mainOculta.innerHTML = cardEntrevistas;
+    ]
+
+let cards = [];
+
+const arrayCards = (elemento,nomeEntrevistada,profissaoEntrevistadas,linkVideos, chave, cards)=>{
+    cardEntrevista = `<div class="card" style="width: 18rem;"> <img src=${elemento} class="card-img-top" alt=""><div class="card-body"><h5 class="card-title">${nomeEntrevistada[chave]}</h5><p class="card-text">${profissaoEntrevistadas[chave]}</p><a href=${linkVideos[chave]} class="btn btn-primary botao" >ASSISTA</a></div></div>`;
+
+    cards.push(cardEntrevista);
+}
+
+
+
+imagensEntrevista.map((elemento,chave)=>{
+    arrayCards(elemento,nomeEntrevistada,profissaoEntrevistadas,linkVideos, chave, cards)
+
+})
+
+mainOculta.innerHTML = cards;
+

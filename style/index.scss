@@ -4,6 +4,7 @@
 @import './footer';
 
 // deixando o link da página com uma cor específica 
+
 #inicio{
     @include linkAtivo();
 }

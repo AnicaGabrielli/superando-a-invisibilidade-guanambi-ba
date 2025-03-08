@@ -114,7 +114,47 @@ main {
 
 .videosReferencia {
   display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.videosReferencia iframe {
+  width: 48%;
+}
+
+.videosReferenciaColumn {
+  display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
+}
+
+.descricao {
+  text-align: center;
+  font-size: small;
+}
+
+#grafico {
+  width: 100%;
+}
+
+iframe {
+  margin-bottom: 3%;
+}
+
+@media screen and (max-width: 700px) {
+  iframe {
+    width: 100%;
+  }
+  .videosReferencia {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .videosReferencia iframe {
+    width: 100%;
+    margin-bottom: 3%;
+  }
 }/*# sourceMappingURL=dados.css.map */

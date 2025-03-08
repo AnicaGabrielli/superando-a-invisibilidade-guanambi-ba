@@ -25,7 +25,7 @@ const pesquisa1 = [
 
     'A inclusão de mulheres na política ainda é um desafio significativo em muitos lugares ao redor do mundo. Historicamente, as mulheres têm sido sub-representadas em cargos de liderança e de tomada de decisão, o que reflete uma desigualdade de gênero persistente na sociedade. Essa sub-representação não é apenas uma questão de números, mas também de diversidade de perspectivas, que são cruciais para a construção de políticas públicas mais justas e inclusivas.',
 
-    'Em Guanambi, não é diferente. Apesar de avanços nas últimas décadas, o número de mulheres em cargos políticos de liderança ainda é preocupantemente baixo. Isso se reflete em todas as esferas do governo local, onde a presença feminina é minúscula em comparação com a masculina. Para ilustrar essa realidade, olhe o gráfico a seguir e perceba como poucas mulheres assumem esses cargos de liderança, evidenciando a necessidade urgente de políticas que promovam maior inclusão e representatividade feminina na política municipal.'
+    'Em Guanambi, não é diferente. Apesar de avanços nas últimas décadas, o número de mulheres em cargos políticos de liderança ainda é preocupantemente baixo. Isso se reflete em todas as esferas do governo local, onde a presença feminina é minúscula em comparação com a masculina. Para mudar essa realidade, é preciso urgentemente de políticas que promovam maior inclusão e representatividade feminina na política municipal.'
 
 ]
 

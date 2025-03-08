@@ -21,6 +21,37 @@ main{
 }
 
 .videosReferencia{
+    @include alinhamentoFlexRow();
+    flex-wrap: wrap;
+    iframe{
+        width: 48%;
+    }
+
+}
+.videosReferenciaColumn{
     @include alinhamentoFlexColumn();
-    
+}
+.descricao{
+    text-align: center;
+    font-size: small;
+}
+#grafico{
+    width: 100%;
+}
+iframe{
+    margin-bottom: 3%;
+}
+
+@media screen and (max-width: 700px){
+    iframe{
+        width: 100%;
+    }
+    .videosReferencia{
+        @include alinhamentoFlexColumn();
+        iframe{
+            width: 100%;
+            margin-bottom: 3%;
+        }
+       
+    }
 }

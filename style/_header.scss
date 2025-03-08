@@ -1,3 +1,4 @@
+
 #tituloLogo{
     background-color: $marrom;
     width: 100%;
@@ -10,7 +11,7 @@
     @include estilizaLinks();
     margin: 2%;
     &:hover{
-        transition: all 1s;
+        transition: all 0.5s;
         background-color: $marromClaro;
         padding: 1%;
         
@@ -18,7 +19,7 @@
 }
 
 #acessos{
-    width: 70%;
+    width: 60%;
     @include alinhamentoFlexRow();
     flex-wrap: wrap;
 }
@@ -28,9 +29,10 @@
 }
 
 #titulo{
-    width: 23%;
+    width: 40%;
     font-size: 110%;
-    padding-left:2% ;
+    padding-left:0.5% ;
+    margin-top: 1%;
 }
 #menuOculto{
     @include alinhamentoFlexRow;
@@ -57,6 +59,7 @@ border: dashed 2px $marromEscuro;
     #titulo{
         font-size: smaller;
         width: 85%;
+        margin-top: 3%;
     }
     #hamburger{
         margin-right: 3%;

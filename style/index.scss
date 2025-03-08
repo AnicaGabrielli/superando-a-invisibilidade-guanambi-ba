@@ -18,10 +18,9 @@ main{
     @include alinhamentoFlexRow();
     flex-wrap: wrap;
     padding: 3%;
-    border-bottom: 8px dashed ;
+    border-bottom: 8px dotted $pretoClaro;
     #introducao{
         font-size: 18px;
-        color: $pretoClaro;
         text-align: justify;
         width: 50%;
     }
@@ -31,7 +30,6 @@ main{
 }
 
 section{
-    color: $pretoClaro;
     h2{
         text-align: center;
         padding: 3%;

@@ -1,10 +1,12 @@
 * {
+  border: 1px solid red;
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
 
 body {
+  color: rgb(71, 64, 64) !important;
   font-family: Arial, Helvetica, sans-serif;
   letter-spacing: 2px;
 }
@@ -12,7 +14,6 @@ body {
 #tituloLogo {
   background-color: rgb(153, 84, 24);
   width: 100%;
-  padding: 1%;
   color: rgb(255, 255, 255);
   display: flex;
   flex-direction: row;
@@ -47,7 +48,7 @@ body {
 #titulo {
   width: 40%;
   font-size: 110%;
-  padding-left: 0.5%;
+  padding-left: 0.8%;
   margin-top: 1%;
 }
 
@@ -78,7 +79,7 @@ body {
   #titulo {
     font-size: smaller;
     width: 85%;
-    margin-top: 3%;
+    padding: 1%;
   }
   #hamburger {
     margin-right: 3%;

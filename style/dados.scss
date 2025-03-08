@@ -12,18 +12,18 @@ body{
 }
 h2{
     text-align: center;
-    padding: 5%;
+    padding: 3%;
 }
 main{
     text-align: justify;
-    margin: 3%;
+    margin: 1%;
 }
 
 .videosReferencia{
     @include alinhamentoFlexRow();
     flex-wrap: wrap;
     iframe{
-        width: 48%;
+        width: 49%;
     }
 
 }
@@ -36,9 +36,6 @@ main{
 }
 #grafico{
     width: 100%;
-}
-iframe{
-    margin-bottom: 3%;
 }
 
 @media screen and (max-width: 700px){

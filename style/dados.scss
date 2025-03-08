@@ -17,6 +17,7 @@ h2{
 main{
     text-align: justify;
     margin: 1%;
+    padding-bottom: 2%
 }
 
 .videosReferencia{
@@ -29,6 +30,9 @@ main{
 }
 .videosReferenciaColumn{
     @include alinhamentoFlexColumn();
+    iframe{
+        width: 49%;
+    }
 }
 .descricao{
     text-align: center;

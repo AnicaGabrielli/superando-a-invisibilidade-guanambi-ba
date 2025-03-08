@@ -7,3 +7,41 @@
 #contato{
     @include linkAtivo();
 }
+
+main{
+    margin: 2%;
+    #agradecimento{
+        text-align: justify;
+    }
+    
+    h2{
+        text-align: center;
+        padding: 3%;
+    }
+    #agradecimento{
+        border-bottom: 8px dotted $pretoClaro;
+        padding-bottom: 2%;
+        margin-bottom: 2%;
+
+    }
+    .btn{
+        background-color: $marromEscuro;
+        border: none;
+    }
+    #containerEquipe{
+        width: 100%;
+        @include alinhamentoFlexColumn();
+        #equipe{
+            width: 70%;
+            @include alinhamentoFlexRow();
+            flex-wrap: wrap-reverse;
+            .card{
+                margin-bottom: 2%;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 700px){
+
+}

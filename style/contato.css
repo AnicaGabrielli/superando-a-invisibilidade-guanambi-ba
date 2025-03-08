@@ -1,5 +1,4 @@
 * {
-  border: 1px solid red;
   box-sizing: border-box;
   margin: 0;
   padding: 0;
@@ -98,4 +97,42 @@ footer {
 #contato {
   background-color: rgb(196, 134, 83);
   padding: 1%;
+}
+
+main {
+  margin: 2%;
+}
+main #agradecimento {
+  text-align: justify;
+}
+main h2 {
+  text-align: center;
+  padding: 3%;
+}
+main #agradecimento {
+  border-bottom: 8px dotted rgb(71, 64, 64);
+  padding-bottom: 2%;
+  margin-bottom: 2%;
+}
+main .btn {
+  background-color: rgb(66, 42, 22);
+  border: none;
+}
+main #containerEquipe {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+main #containerEquipe #equipe {
+  width: 70%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap-reverse;
+}
+main #containerEquipe #equipe .card {
+  margin-bottom: 2%;
 }/*# sourceMappingURL=contato.css.map */

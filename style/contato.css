@@ -141,6 +141,9 @@ h2 {
 }
 
 @media screen and (max-width: 900px) {
+  main #agradecimento {
+    font-size: 16px;
+  }
   #containerEquipe #equipe {
     justify-content: center;
     width: 100%;

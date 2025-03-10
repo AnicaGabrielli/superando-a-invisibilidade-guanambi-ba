@@ -16,17 +16,15 @@ h2{
 }
 main{
     text-align: justify;
-    margin: 1%;
-    padding-bottom: 2%
+    padding: 3%;
 }
 
 .videosReferencia{
     @include alinhamentoFlexRow();
     flex-wrap: wrap;
-    iframe{
-        width: 49%;
+    div{
+        width: 47%;
     }
-
 }
 .videosReferenciaColumn{
     @include alinhamentoFlexColumn();
@@ -37,21 +35,27 @@ main{
 .descricao{
     text-align: center;
     font-size: small;
+    padding: 1%;
 }
 #grafico{
     width: 100%;
 }
 
 @media screen and (max-width: 700px){
-    iframe{
-        width: 100%;
-    }
     .videosReferencia{
         @include alinhamentoFlexColumn();
-        iframe{
+        div{
             width: 100%;
-            margin-bottom: 3%;
+            border: 3px solid red;
+            iframe{
+                width: 100%;
+            }
         }
        
+    }
+    .videosReferenciaColumn{
+        iframe{
+            width: 100%;
+        }
     }
 }

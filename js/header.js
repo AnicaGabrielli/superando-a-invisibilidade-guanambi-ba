@@ -48,8 +48,6 @@
 
  const idLink = ['inicio', 'entrevistas', 'dados', 'contato']
 
- /*IMPORTANTE: aqui vai dar um probleminha de acesso porque o index não precisa voltar um página para visitá-lo*/
-
  const urlsAcesso = ['./index.html','./pages/entrevistas.html','./pages/dados.html','./pages/contato.html'];
 
  nomesDosAcessos.map((el, index)=>{

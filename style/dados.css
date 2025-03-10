@@ -48,9 +48,7 @@ body {
   width: 40%;
   font-size: 110%;
   padding-left: 0.8%;
-  margin: 1%;
-  padding-top: 1%;
-  padding-bottom: 1%;
+  margin-top: 1%;
 }
 
 #menuOculto {
@@ -80,7 +78,8 @@ body {
   #titulo {
     font-size: smaller;
     width: 85%;
-    padding: 1%;
+    padding: 2%;
+    margin-left: 1%;
   }
   #hamburger {
     margin-right: 3%;
@@ -112,8 +111,7 @@ h2 {
 
 main {
   text-align: justify;
-  margin: 1%;
-  padding-bottom: 2%;
+  padding: 3%;
 }
 
 .videosReferencia {
@@ -123,8 +121,8 @@ main {
   align-items: center;
   flex-wrap: wrap;
 }
-.videosReferencia iframe {
-  width: 49%;
+.videosReferencia div {
+  width: 47%;
 }
 
 .videosReferenciaColumn {
@@ -140,6 +138,7 @@ main {
 .descricao {
   text-align: center;
   font-size: small;
+  padding: 1%;
 }
 
 #grafico {
@@ -147,17 +146,20 @@ main {
 }
 
 @media screen and (max-width: 700px) {
-  iframe {
-    width: 100%;
-  }
   .videosReferencia {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
   }
-  .videosReferencia iframe {
+  .videosReferencia div {
     width: 100%;
-    margin-bottom: 3%;
+    border: 3px solid red;
+  }
+  .videosReferencia div iframe {
+    width: 100%;
+  }
+  .videosReferenciaColumn iframe {
+    width: 100%;
   }
 }/*# sourceMappingURL=dados.css.map */

@@ -9,24 +9,26 @@
 }
 
 main{
-    margin: 2%;
+    margin: 3%;
     #agradecimento{
         text-align: justify;
+        font-size: $tamanhoFontePadrao;
     }
-    
+}
     h2{
         text-align: center;
         padding: 3%;
     }
+
     #agradecimento{
-        border-bottom: 8px dotted $pretoClaro;
-        padding-bottom: 2%;
-        margin-bottom: 2%;
+        border-bottom: $estiloBorda;
+        padding-bottom: 3%;
+        margin-bottom: 3%;
 
     }
     .btn{
-        background-color: $marromEscuro;
-        border: none;
+        background-color: $marromEscuro !important;
+        border: none !important;
     }
     #containerEquipe{
         width: 100%;
@@ -35,13 +37,15 @@ main{
             width: 70%;
             @include alinhamentoFlexRow();
             flex-wrap: wrap-reverse;
-            .card{
-                margin-bottom: 2%;
-            }
         }
-    }
 }
 
-@media screen and (max-width: 700px){
+@media screen and (max-width: 900px){
+    #containerEquipe{
 
+        #equipe{
+            justify-content: center;
+            width: 100%;
+        }
+    }
 }

@@ -6,8 +6,12 @@ $marromClaro:rgb(196, 134, 83);
 $marromClarinho:rgb(246, 229, 213);
 $branco: rgb(255, 255, 255);
 $pretoClaro:rgb(71, 64, 64);
+$estiloBorda: 8px dotted $pretoClaro;
+$tamanhoFontePadrao: 18px;
+$tamanhoFonteResponsivo:16px;
+$paddingTextoResponsivoPadrao: 3%;
+
 *{
-    // decobri que serve para deixar o elemento filho completamente dentro do pai e adcionar uma margin 
     box-sizing: border-box;
     margin: 0;
     padding: 0;

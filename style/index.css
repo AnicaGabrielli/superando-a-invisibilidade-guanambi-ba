@@ -5,7 +5,6 @@
 }
 
 body {
-  border: none;
   color: rgb(71, 64, 64) !important;
   font-family: Arial, Helvetica, sans-serif;
   letter-spacing: 2px;
@@ -79,7 +78,8 @@ body {
   #titulo {
     font-size: smaller;
     width: 85%;
-    padding: 1%;
+    padding: 2%;
+    margin-left: 1%;
   }
   #hamburger {
     margin-right: 3%;
@@ -100,10 +100,9 @@ footer {
   padding: 1%;
 }
 
-h1 {
+h2 {
   text-align: center;
-  font-size: large;
-  padding: 3%;
+  padding: 4%;
 }
 
 main {
@@ -124,10 +123,6 @@ main #iframe {
   width: 45%;
 }
 
-section h2 {
-  text-align: center;
-  padding: 3%;
-}
 section #subtitulo {
   padding-bottom: 1%;
   text-align: center;
@@ -143,13 +138,10 @@ section #subtitulo {
 }
 #livraria .btn {
   background-color: rgb(66, 42, 22);
-  border: solid 1px rgb(66, 42, 22);
+  border: none;
 }
 
 @media screen and (max-width: 700px) {
-  h1 {
-    padding-top: 50px;
-  }
   main {
     flex-direction: column;
     padding-bottom: 50px;
@@ -160,7 +152,7 @@ section #subtitulo {
     margin-bottom: 30px;
   }
   main #iframe {
-    width: 97%;
+    width: 100%;
   }
   #livraria {
     display: flex;

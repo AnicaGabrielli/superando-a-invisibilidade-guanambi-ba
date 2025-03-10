@@ -43,7 +43,7 @@ const email =[
 let cardContato = [];
 let cardsContato;
 const arrayCards = (elemento,nome,papel,email, chave, cardContato)=>{
-   cardsContato = `<div class="card" style="width: 18rem;"> <img src=${elemento} class="card-img-top" alt=""><div class="card-body"><h5 class="card-title">${nome[chave]}</h5><p class="card-text">${papel[chave]}</p><a href=${email[chave]} class="btn btn-primary botao" >EMAIL</a></div></div>`;
+   cardsContato = `<div class="card" style="width: 18rem;margin-bottom: 4%;"> <img src=${elemento} class="card-img-top" alt=""><div class="card-body"><h5 class="card-title">${nome[chave]}</h5><p class="card-text">${papel[chave]}</p><a href=${email[chave]} class="btn btn-primary botao" >EMAIL</a></div></div>`;
 
     cardContato.push(cardsContato);
 }
@@ -55,4 +55,4 @@ fotos.map((elemento,chave)=>{
 
 })
 
-equipe.innerHTML = cardContato;
+equipe.innerHTML = cardContato.join(' ');

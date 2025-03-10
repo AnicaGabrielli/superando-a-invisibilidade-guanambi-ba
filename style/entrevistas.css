@@ -78,7 +78,8 @@ body {
   #titulo {
     font-size: smaller;
     width: 85%;
-    padding: 1%;
+    padding: 2%;
+    margin-left: 1%;
   }
   #hamburger {
     margin-right: 3%;
@@ -104,13 +105,14 @@ footer {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  padding: 4%;
+  padding: 3%;
   flex-wrap: wrap;
   width: 100%;
-  border-top: dotted 8px rgb(71, 64, 64);
+  border-top: 8px dotted rgb(71, 64, 64);
 }
 
 .entrevistaDescricao {
+  font-size: 18px;
   width: 45%;
   text-align: justify;
 }
@@ -119,7 +121,7 @@ iframe {
   width: 48% !important;
 }
 
-h1 {
+h2 {
   text-align: center;
   padding-top: 4%;
   padding-bottom: 4%;
@@ -134,7 +136,6 @@ h1 {
   display: none;
   margin-bottom: 4%;
   padding-top: 4%;
-  padding-bottom: 4%;
   border-top: dotted 8px rgb(153, 84, 24);
   border-bottom: dotted 8px rgb(153, 84, 24);
 }
@@ -150,8 +151,5 @@ h1 {
   }
   #mainOculta {
     display: flex;
-  }
-  h1 {
-    padding-top: 50px;
   }
 }/*# sourceMappingURL=entrevistas.css.map */

@@ -87,7 +87,7 @@ const linkVideos = [
 let cards = [];
 
 const arrayCards = (elemento,nomeEntrevistada,profissaoEntrevistadas,linkVideos, chave, cards)=>{
-    cardEntrevista = `<div class="card" style="width: 18rem;"> <img src=${elemento} class="card-img-top" alt=""><div class="card-body"><h5 class="card-title">${nomeEntrevistada[chave]}</h5><p class="card-text">${profissaoEntrevistadas[chave]}</p><a href=${linkVideos[chave]} class="btn btn-primary botao" >ASSISTA</a></div></div>`;
+    cardEntrevista = `<div class="card" style="width: 18rem; margin-bottom:3%;"> <img src=${elemento} class="card-img-top" alt=""><div class="card-body"><h5 class="card-title">${nomeEntrevistada[chave]}</h5><p class="card-text">${profissaoEntrevistadas[chave]}</p><a href=${linkVideos[chave]} class="btn btn-primary botao" >ASSISTA</a></div></div>`;
 
     cards.push(cardEntrevista);
 }
@@ -98,6 +98,5 @@ imagensEntrevista.map((elemento,chave)=>{
     arrayCards(elemento,nomeEntrevistada,profissaoEntrevistadas,linkVideos, chave, cards)
 
 })
-
-mainOculta.innerHTML = cards;
+mainOculta.innerHTML = cards.join(' ');
 

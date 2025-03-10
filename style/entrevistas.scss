@@ -9,20 +9,21 @@
 }
 .entrevista{
     @include alinhamentoFlexRow();
-    padding: 4%;
+    padding: 3%;
     flex-wrap: wrap;
     width: 100%;
-    border-top: dotted 8px $pretoClaro;
+    border-top: $estiloBorda;
     
 }
 .entrevistaDescricao{
+    font-size: $tamanhoFontePadrao;
     width: 45%;
     text-align: justify;
 }
 iframe{
     width: 48% !important;
 }
-h1{
+h2{
     text-align: center;
     padding-top: 4%;
     padding-bottom: 4%;
@@ -33,11 +34,11 @@ h1{
     display: none;
     margin-bottom: 4%;
     padding-top: 4%;
-    padding-bottom: 4%;
     border-top: dotted 8px $marrom;
     border-bottom: dotted 8px $marrom;
 
 }
+
 .botao{
     background-color: $marromEscuro !important;
     border: none !important;
@@ -50,7 +51,5 @@ h1{
     #mainOculta{
         display: flex;
     }
-    h1{
-        padding-top: 50px;
-    }
+
 }
